@@ -11,9 +11,14 @@
 <meta property="og:url" content="https://klaarex.com/">
 <meta property="og:site_name" content="Klaarex">
 <link rel="canonical" href="https://klaarex.com/">
-<!-- TODO before launch: add an og:image (1200×630 px) so LinkedIn/WhatsApp link previews show a picture:
-<meta property="og:image" content="https://klaarex.com/og.png"> -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2317365D'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23E6A83A'/%3E%3Cpath d='M8 16a8 8 0 0 1 16 0' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://klaarex.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Klaarex – Deutschsprachiger Kundenservice aus Prishtina">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://klaarex.com/og.png">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Klaarex – Deutschsprachiger Kundenservice aus Prishtina</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
@@ -107,10 +112,9 @@ table { border-collapse: collapse; width: 100%; }
 }
 .site-header::before { content: ""; display: block; height: 2px; background: var(--spectrum); }
 .site-header .wrap { display: flex; align-items: center; gap: 24px; min-height: 70px; }
-.brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: #fff; font-weight: 600; letter-spacing: .02em; font-size: 18px; line-height: 1.15; text-transform: uppercase; }
-.brand-mark { width: 12px; height: 12px; border-radius: 50%; background: var(--spectrum); background-size: 300% 100%; flex: none; box-shadow: 0 0 0 4px rgba(255, 255, 255, .06); }
-.brand-mark svg { display: none; }
-.brand-sub { display: block; font-weight: 400; font-size: 10px; color: var(--muted); letter-spacing: .14em; text-transform: uppercase; margin-top: 2px; }
+.brand { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 6px; text-decoration: none; color: #fff; }
+.brand-logo { display: block; height: 14px; width: auto; }
+.brand-sub { display: block; font-weight: 400; font-size: 10px; color: var(--muted); letter-spacing: .14em; text-transform: uppercase; }
 .nav { margin-left: auto; display: flex; align-items: center; gap: 2px; }
 .nav a { color: var(--ink-2); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 11px; border-radius: 999px; white-space: nowrap; transition: color .15s, background .15s; }
 .nav a:hover { color: #fff; background: rgba(255, 255, 255, .07); }
@@ -429,12 +433,7 @@ table { border-collapse: collapse; width: 100%; }
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Zur Startseite">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 13a8 8 0 0 1 16 0" stroke="#0E223B" stroke-width="2.4" stroke-linecap="round"/><rect x="3" y="12" width="4" height="6" rx="1.5" fill="#0E223B"/><rect x="17" y="12" width="4" height="6" rx="1.5" fill="#0E223B"/></svg>
-      </span>
-      <span><span data-cfg="companyName">Klaarex</span><span class="brand-sub">Kundenservice · Prishtina</span></span>
-    </a>
+    <a class="brand" href="#top" aria-label="Zur Startseite"><img class="brand-logo" src="logo.png" alt="Klaarex" decoding="async"><span class="brand-sub">Kundenservice · Prishtina</span></a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menü">Menü</button>
     <nav class="nav" id="nav" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
@@ -1127,7 +1126,7 @@ table { border-collapse: collapse; width: 100%; }
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-brand">
-      <a class="brand" href="#top" aria-label="Zur Startseite"><span class="brand-mark" aria-hidden="true"></span><span><span data-cfg="companyName">Klaarex</span><span class="brand-sub">Kundenservice · Prishtina</span></span></a>
+      <a class="brand" href="#top" aria-label="Zur Startseite"><img class="brand-logo" src="logo.png" alt="Klaarex" decoding="async"><span class="brand-sub">Kundenservice · Prishtina</span></a>
       <a class="btn btn-secondary btn-sm" href="#kontakt">Angebot anfragen</a>
     </div>
   </div>
@@ -1361,7 +1360,7 @@ const CONFIG = {
   });
 
   // Structured data for search engines (filled from CONFIG)
-  const ld = { "@context": "https://schema.org", "@type": "ProfessionalService", name: CONFIG.companyName, description: "Deutschsprachiger Kundenservice (Nearshore) aus Prishtina, Kosovo", telephone: CONFIG.phone, email: CONFIG.email, address: { "@type": "PostalAddress", streetAddress: CONFIG.address, addressLocality: "Prishtina", addressCountry: "XK" }, areaServed: ["DE", "AT", "CH"], availableLanguage: ["de", "en", "sq"] };
+  const ld = { "@context": "https://schema.org", "@type": "ProfessionalService", name: CONFIG.companyName, url: "https://klaarex.com/", logo: "https://klaarex.com/logo.png", image: "https://klaarex.com/og.png", description: "Deutschsprachiger Kundenservice (Nearshore) aus Prishtina, Kosovo", telephone: CONFIG.phone, email: CONFIG.email, address: { "@type": "PostalAddress", streetAddress: CONFIG.address, addressLocality: "Prishtina", addressCountry: "XK" }, areaServed: ["DE", "AT", "CH"], availableLanguage: ["de", "en", "sq"] };
   const s = document.createElement("script"); s.type = "application/ld+json"; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
 })();
 </script>

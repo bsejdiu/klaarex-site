@@ -15,5 +15,4 @@ Connected to Vercel: every push to `main` goes live on https://klaarex.com.
 
 1. Fill the `CONFIG` block (founders, phones, Calendly, LinkedIn, ARBK number) and the Impressum/Datenschutz placeholders.
 2. Create a form at formspree.io and paste its URL into `CONFIG.formEndpoint`.
-3. Add `og.png` (1200×630) to the repo root for link previews.
-4. Create the mailboxes kontakt@klaarex.com and jobs@klaarex.com.
+3. Create the mailboxes kontakt@klaarex.com and jobs@klaarex.com.
