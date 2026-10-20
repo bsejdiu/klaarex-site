@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Deutschsprachiger Kundenservice aus Prishtina: muttersprachliche Agenten, gleiche Zeitzone, vertraglich zugesicherte Service-Level, DSGVO-konforme Verträge. Angebot innerhalb von 24 Stunden, Start innerhalb von 14 Tagen.">
+<meta name="description" content="Deutschsprachiger Kundenservice aus Prishtina: muttersprachliche Agenten, gleiche Zeitzone, vertraglich zugesicherte Service-Level, DSGVO-konforme Verträge. Angebot innerhalb von 24 Stunden, Start innerhalb von vier Wochen.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Klaarex – Deutschsprachiger Kundenservice aus Prishtina">
-<meta property="og:description" content="Muttersprachliche Agenten, gleiche Zeitzone, DSGVO-konforme Verträge. Angebot innerhalb von 24 Stunden, Start innerhalb von 14 Tagen.">
+<meta property="og:description" content="Muttersprachliche Agenten, gleiche Zeitzone, DSGVO-konforme Verträge. Angebot innerhalb von 24 Stunden, Start innerhalb von vier Wochen.">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://klaarex.com/">
 <meta property="og:site_name" content="Klaarex">
@@ -293,17 +293,7 @@ table { border-collapse: collapse; width: 100%; }
 @media (max-width: 900px) { .sla-grid { grid-template-columns: 1fr; } }
 
 /* Team */
-.team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.agent { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; display: grid; gap: 14px; align-content: start; min-width: 0; }
-.agent-top { display: flex; align-items: center; gap: 14px; }
 .avatar { width: 50px; height: 50px; border-radius: 50%; background: var(--surface-2); color: #fff; border: 1px solid var(--line-2); display: grid; place-items: center; font-family: var(--font-mono); font-weight: 600; font-size: 14px; flex: none; }
-.agent h3 { font-size: 19px; font-weight: 500; }
-.agent .lvl { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--g1); font-weight: 600; }
-.agent dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 14px; margin: 0; color: var(--ink-2); }
-.agent dt { color: var(--muted); }
-.agent dd { margin: 0; min-width: 0; }
-.agent audio { width: 100%; margin-top: 4px; }
-.agent .audio-note { font-size: 13px; color: var(--muted); }
 .founders { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
 .founder { display: flex; gap: 16px; align-items: flex-start; padding: 24px 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); min-width: 0; }
 .founder .avatar { width: 54px; height: 54px; font-size: 15px; background: var(--spectrum); color: #06070A; border: 0; }
@@ -316,8 +306,7 @@ table { border-collapse: collapse; width: 100%; }
 .hotline .num { font-family: var(--font-mono); font-size: clamp(24px, 3.2vw, 36px); font-weight: 600; letter-spacing: -0.01em; word-break: break-word; color: #fff; }
 .hotline .hrs { font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 8px; font-weight: 600; }
 .hotline .btn { margin-top: 18px; }
-@media (max-width: 960px) { .team-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 700px) { .team-grid, .founders, .hotline { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .founders, .hotline { grid-template-columns: 1fr; } }
 
 /* Security — document tiles + checks */
 .sec-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
@@ -431,7 +420,6 @@ table { border-collapse: collapse; width: 100%; }
 .legal p, .legal li { font-size: 15.5px; color: var(--ink-2); }
 .legal p + p { margin-top: 10px; }
 .legal ul { list-style: disc; padding-left: 20px; display: grid; gap: 6px; margin: 8px 0; }
-.legal .todo { background: rgba(242, 176, 76, .12); border-left: 3px solid var(--g1); padding: 12px 14px; border-radius: 8px; font-size: 14px; margin-top: 20px; color: var(--ink-2); }
 .legal address { font-style: normal; line-height: 1.7; }
 .back { display: inline-flex; gap: 8px; align-items: center; font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--muted); font-weight: 600; }
 .back:hover { color: #fff; }
@@ -455,7 +443,7 @@ table { border-collapse: collapse; width: 100%; }
       <a href="#team">Team</a>
       <a href="#sicherheit">Sicherheit</a>
       <a href="#kontakt">Kontakt</a>
-      <a class="phone" href="#" data-cfg-tel="phoneDE" data-cfg="phoneDE">+49 [Nummer]</a>
+      <a class="phone" href="#" data-cfg-tel="phone" data-cfg="phone">+383 43 819 881</a>
       <a class="btn btn-primary btn-sm" href="#kontakt">Angebot anfragen</a>
     </nav>
   </div>
@@ -471,8 +459,8 @@ table { border-collapse: collapse; width: 100%; }
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Nearshore-Kundenservice · Prishtina, Kosovo</p>
-        <h1>Deutschsprachiger Kundenservice. <span class="mark">Muttersprachlich</span>, in Ihrer Zeitzone, in zwei Wochen startklar.</h1>
-        <p class="lead">Unser Team in Prishtina übernimmt Telefon, E-Mail und Chat für Ihre deutschsprachigen Kunden – mit Agenten, die in Deutschland, Österreich oder der Schweiz gelebt und gearbeitet haben. Vertraglich zugesicherte Service-Level, Verträge nach DSGVO, Start innerhalb von 14 Tagen.</p>
+        <h1>Deutschsprachiger Kundenservice. <span class="mark">Muttersprachlich</span>, in Ihrer Zeitzone, in vier Wochen startklar.</h1>
+        <p class="lead">Unser Team in Prishtina übernimmt Telefon, E-Mail und Chat für Ihre deutschsprachigen Kunden – mit Agenten, die in Deutschland, Österreich oder der Schweiz gelebt und gearbeitet haben. Vertraglich zugesicherte Service-Level, Verträge nach DSGVO, Start innerhalb von vier Wochen.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#kontakt">Angebot anfragen <span class="arr" aria-hidden="true">→</span></a>
           <a class="btn btn-secondary" href="#team">Demo-Hotline anrufen</a>
@@ -495,12 +483,12 @@ table { border-collapse: collapse; width: 100%; }
           <div class="spec-row"><dt>Sprachen</dt><dd>Deutsch (muttersprachlich oder C1) · Englisch · Albanisch</dd></div>
           <div class="spec-row"><dt>Zeitzone</dt><dd>MEZ / MESZ – identisch mit Deutschland
             <div class="clock-pair"><span>Berlin <b data-clock="Europe/Berlin">--:--</b></span><span>Prishtina <b data-clock="Europe/Belgrade">--:--</b></span></div></dd></div>
-          <div class="spec-row"><dt>Servicezeit</dt><dd>Mo–Fr 08:00–18:00 Uhr, erweiterbar bis 22:00 Uhr und samstags</dd></div>
+          <div class="spec-row"><dt>Servicezeit</dt><dd>Mo–Fr 08:00–18:00 Uhr</dd></div>
           <div class="spec-row"><dt>Kanäle</dt><dd>Telefon, E-Mail, Ticket, Live-Chat, WhatsApp Business</dd></div>
-          <div class="spec-row"><dt>Kapazität</dt><dd><span data-cfg="capacityNow">3</span> Agenten sofort verfügbar, Ausbau auf <span data-cfg="capacityScale">10</span> Agenten innerhalb von <span data-cfg="scaleWeeks">8</span> Wochen</dd></div>
+          <div class="spec-row"><dt>Team</dt><dd>Feste Agenten, für Ihr Projekt ausgewählt – Hörprobe und Video-Interview vor Vertragsabschluss</dd></div>
           <div class="spec-row"><dt>Tools</dt><dd>Ihre Systeme: Zendesk, Freshdesk, Gorgias, HubSpot, Shopify, Shopware u. a.</dd></div>
           <div class="spec-row"><dt>Vertrag</dt><dd>Service-Level im Vertrag, Preis nach Vereinbarung, Abrechnung in Euro per SEPA</dd></div>
-          <div class="spec-row"><dt>Start</dt><dd>Innerhalb von 14 Tagen nach Vertragsunterzeichnung</dd></div>
+          <div class="spec-row"><dt>Start</dt><dd>Innerhalb von vier Wochen nach Vertragsunterzeichnung</dd></div>
         </dl>
       </aside>
     </div>
@@ -512,7 +500,7 @@ table { border-collapse: collapse; width: 100%; }
   <div class="wrap">
     <div class="stat"><b>100 %</b><span>deutschsprachige Agenten, Muttersprache oder C1</span></div>
     <div class="stat"><b>0 h</b><span>Zeitverschiebung zu Berlin, Wien und Zürich</span></div>
-    <div class="stat"><b>14 Tage</b><span>vom unterschriebenen Vertrag bis zum Start</span></div>
+    <div class="stat"><b>4 Wochen</b><span>vom unterschriebenen Vertrag bis zum Start</span></div>
     <div class="stat"><b>24 h</b><span>bis zum Angebot nach dem Erstgespräch</span></div>
     <div class="stat"><b>1 Werktag</b><span>Antwort auf jede Anfrage, von der Geschäftsführung</span></div>
     <div class="stat"><b>3</b><span>Sprachen: Deutsch, Englisch, Albanisch</span></div>
@@ -525,7 +513,7 @@ table { border-collapse: collapse; width: 100%; }
     <div class="audience" style="margin-bottom: clamp(40px, 5vw, 56px)">
       <span class="eyebrow">Für wen wir arbeiten</span>
       <span class="chip">E-Commerce &amp; D2C-Marken</span>
-      <span class="chip">Call-Center &amp; BPO (Overflow, Abendschicht)</span>
+      <span class="chip">Call-Center &amp; BPO (Overflow, Auftragsspitzen)</span>
       <span class="chip">SaaS &amp; Startups</span>
       <span class="chip">Telekommunikation &amp; Energie</span>
       <span class="chip">Dienstleister mit deutschsprachigen Kunden</span>
@@ -543,12 +531,12 @@ table { border-collapse: collapse; width: 100%; }
       <div>
         <span class="num">Qualität</span>
         <h3>Deutsch, das man nicht erklären muss</h3>
-        <p>Unsere Agenten sprechen Deutsch wie Ihre Kunden – ohne Skript-Akzent, mit Verständnis für deutsche Umgangsformen. Rufen Sie die Demo-Hotline an und urteilen Sie selbst, bevor Sie etwas unterschreiben.</p>
+        <p>Wir stellen nur Agenten ein, die Deutsch wie Ihre Kunden sprechen – ohne Skript-Akzent, mit Verständnis für deutsche Umgangsformen. Rufen Sie die Demo-Hotline an und hören Sie die Hörprobe jedes vorgeschlagenen Agenten, bevor Sie etwas unterschreiben.</p>
       </div>
       <div>
         <span class="num">Tempo</span>
-        <h3>In 14 Tagen einsatzbereit</h3>
-        <p>Angebot innerhalb von 24 Stunden nach dem Erstgespräch, fünf Tage Einarbeitung in Ihren Systemen, Start innerhalb von 14 Tagen nach Unterzeichnung. Sie behalten Ihre Tools, Ihre Prozesse und die Hoheit über Ihre Kundendaten.</p>
+        <h3>In vier Wochen einsatzbereit</h3>
+        <p>Angebot innerhalb von 24 Stunden nach dem Erstgespräch, Teamauswahl im Video-Interview, fünf Tage Einarbeitung in Ihren Systemen, Start innerhalb von vier Wochen nach Unterzeichnung. Sie behalten Ihre Tools, Ihre Prozesse und die Hoheit über Ihre Kundendaten.</p>
       </div>
     </div>
 
@@ -565,9 +553,9 @@ table { border-collapse: collapse; width: 100%; }
           <tr><th scope="row">Deutsch</th><td>Muttersprachler</td><td>Fremdsprache, selten muttersprachlich</td><td class="us"><strong>Muttersprachler oder C1</strong>, im deutschen Alltag gelernt</td></tr>
           <tr><th scope="row">Zeitzone</th><td>MEZ</td><td>Mehrere Stunden Versatz, Nachtschichten nötig</td><td class="us"><strong>MEZ</strong> – identisch, keine Schichtverschiebung</td></tr>
           <tr><th scope="row">Kosten pro Agent und Monat</th><td>Hoch: Gehalt, Nebenkosten, Arbeitsplatz, Ausfallzeiten, Recruiting</td><td>Niedrig, aber hoher Aufwand für Einarbeitung und Qualitätskontrolle</td><td class="us"><strong>Deutlich unter Inhouse</strong>, individuell vereinbart, alles inklusive</td></tr>
-          <tr><th scope="row">Datenschutz</th><td>DSGVO direkt</td><td>Drittland; Standardvertragsklauseln und Prüfung meist aufwendig</td><td class="us">Drittland mit <strong>DSGVO-nahem Recht</strong>; AVV, SCC und TIA liegen fertig vor</td></tr>
+          <tr><th scope="row">Datenschutz</th><td>DSGVO direkt</td><td>Drittland; Standardvertragsklauseln und Prüfung meist aufwendig</td><td class="us">Drittland mit <strong>DSGVO-nahem Recht</strong>; AVV, SCC und TIA erhalten Sie mit dem Angebot</td></tr>
           <tr><th scope="row">Besuch vor Ort</th><td>Jederzeit</td><td>Lange Flugzeiten, selten</td><td class="us"><strong>2–3 Flugstunden</strong>, Direktflüge aus Deutschland</td></tr>
-          <tr><th scope="row">Zeit bis zum Start</th><td>Recruiting und Einarbeitung: Monate</td><td>Mehrere Wochen</td><td class="us"><strong>14 Tage</strong> nach Vertragsunterzeichnung</td></tr>
+          <tr><th scope="row">Zeit bis zum Start</th><td>Recruiting und Einarbeitung: Monate</td><td>Mehrere Wochen</td><td class="us"><strong>4 Wochen</strong> nach Vertragsunterzeichnung</td></tr>
           <tr><th scope="row">Ihr Ansprechpartner</th><td>Teamleitung intern</td><td>Account-Manager, wechselt häufig</td><td class="us"><strong>Geschäftsführung</strong>, persönlich und dauerhaft</td></tr>
         </tbody>
       </table>
@@ -654,7 +642,7 @@ table { border-collapse: collapse; width: 100%; }
       </article>
       <article class="industry">
         <h3>Logistik &amp; Mobilität</h3>
-        <p>Sendungsverfolgung, Zustelltermine, Schadensmeldungen, Fahrer- und Partner-Hotline, Disposition in Randzeiten.</p>
+        <p>Sendungsverfolgung, Zustelltermine, Schadensmeldungen, Fahrer- und Partner-Hotline, Unterstützung der Disposition.</p>
         <span class="tools-line">TMS · Track-&amp;-Trace-Portale · Telefonanlage</span>
       </article>
       <article class="industry">
@@ -690,7 +678,7 @@ table { border-collapse: collapse; width: 100%; }
         <span class="n">1</span>
         <span class="dur">30 Minuten</span>
         <h3>Gespräch</h3>
-        <p>Wir klären Volumen, Kanäle, Tools, Servicezeiten und die Anforderungen an Ihre Agenten. Auf Wunsch lernen Sie die Agenten direkt im Video-Interview kennen.</p>
+        <p>Wir klären Volumen, Kanäle, Tools, Servicezeiten und die Anforderungen an Ihre Agenten. Anschließend schlagen wir Ihnen Agenten für Ihr Team vor – mit Hörprobe und Lebenslauf, zum Kennenlernen im Video-Interview.</p>
       </div>
       <div class="step">
         <span class="n">2</span>
@@ -700,13 +688,13 @@ table { border-collapse: collapse; width: 100%; }
       </div>
       <div class="step">
         <span class="n">3</span>
-        <span class="dur">Start innerhalb von 14 Tagen</span>
+        <span class="dur">Start innerhalb von vier Wochen</span>
         <h3>Einarbeitung und Betrieb</h3>
-        <p>Fünf Tage Einarbeitung in Ihren Systemen, dann Start mit täglichem Kurzbericht in den ersten zwei Wochen. Dieselben Agenten bleiben bei Ihnen: fester Ansprechpartner, wöchentlicher Qualitätsbericht, eingearbeitete Vertretung für Urlaub und Krankheit.</p>
+        <p>Fünf Tage Einarbeitung in Ihren Systemen, dann Start mit täglichem Kurzbericht in den ersten zwei Wochen. Dieselben Agenten bleiben bei Ihnen: fester Ansprechpartner, wöchentlicher Qualitätsbericht. Die Vertretung bei Urlaub und Krankheit regeln wir im Vertrag.</p>
       </div>
     </div>
     <div class="partner-strip">
-      <p><strong>Sie sind selbst Call-Center-Dienstleister?</strong> Wir arbeiten als Nearshore-Partner für Overflow, Abendschichten und Auftragsspitzen – auf Wunsch White-Label unter Ihrem Namen, abgerechnet pro Agentenstunde.</p>
+      <p><strong>Sie sind selbst Call-Center-Dienstleister?</strong> Wir arbeiten als Nearshore-Partner für Overflow und Auftragsspitzen innerhalb unserer Servicezeit – auf Wunsch White-Label unter Ihrem Namen, abgerechnet pro Agentenstunde.</p>
       <a class="btn btn-secondary" href="#kontakt">Partnerschaft anfragen</a>
     </div>
   </div>
@@ -769,15 +757,31 @@ table { border-collapse: collapse; width: 100%; }
       <h2>Feste Agenten, die Sie persönlich kennen – kein anonymer Pool.</h2>
       <p class="lead">Kein Konzern: Die Geschäftsführung kennt jeden Kunden und sitzt im selben Büro wie die Agenten. Hörproben und Lebensläufe erhalten Sie vor Vertragsabschluss; im Video-Interview wählen Sie die Agenten selbst aus.</p>
     </div>
-    <div class="team-grid" id="agents"></div>
+    <div class="why-grid" aria-label="So stellen wir Ihr Team zusammen">
+      <div>
+        <span class="num">1 · Auswahl</span>
+        <h3>Deutsch aus dem Alltag, nicht aus dem Kurs</h3>
+        <p>Wir suchen Kandidaten, die in Deutschland, Österreich oder der Schweiz gelebt oder gearbeitet haben – Muttersprache oder C1. Jeder durchläuft einen Sprachtest und ein Probegespräch mit der Geschäftsführung.</p>
+      </div>
+      <div>
+        <span class="num">2 · Vorstellung</span>
+        <h3>Sie entscheiden, wer Ihr Team wird</h3>
+        <p>Vor Vertragsabschluss erhalten Sie Hörprobe und Lebenslauf jedes vorgeschlagenen Agenten. Im Video-Interview lernen Sie die Kandidaten kennen und wählen selbst aus.</p>
+      </div>
+      <div>
+        <span class="num">3 · Einarbeitung</span>
+        <h3>Fünf Tage in Ihren Systemen</h3>
+        <p>Produkte, Fälle, Tonfall und Tools lernen die Agenten anhand Ihrer Vorgaben. Danach bewertet die Qualitätsleitung jede Woche Gespräche und bespricht sie mit dem Agenten.</p>
+      </div>
+    </div>
     <div class="founders" id="founders"></div>
     <div class="hotline">
       <div>
         <h3>Hören Sie selbst, bevor Sie entscheiden.</h3>
-        <p>Rufen Sie unsere Demo-Hotline an und sprechen Sie drei Minuten mit einem unserer Agenten – auf Deutsch, ohne Termin, ohne Verpflichtung.</p>
+        <p>Rufen Sie unsere Demo-Hotline an und sprechen Sie drei Minuten mit uns – auf Deutsch, ohne Termin, ohne Verpflichtung.</p>
       </div>
       <div>
-        <div class="num"><a href="#" data-cfg-tel="phoneDE" data-cfg="phoneDE" style="color:inherit;text-decoration:none">+49 [Nummer]</a></div>
+        <div class="num"><a href="#" data-cfg-tel="phone" data-cfg="phone" style="color:inherit;text-decoration:none">+383 43 819 881</a></div>
         <div class="hrs" data-cfg="demoHours">Mo–Fr 09:00–17:00 Uhr</div>
         <a class="btn btn-sm" href="#kontakt">Oder Rückruf vereinbaren</a>
       </div>
@@ -814,16 +818,16 @@ table { border-collapse: collapse; width: 100%; }
       <div class="loc-card">
         <div>
           <h3>Unser Büro</h3>
-          <address><strong><span data-cfg="companyName">Klaarex</span></strong><br><span data-cfg="address">[Straße Nr.], 10000 Prishtina, Kosovo</span></address>
+          <address><strong><span data-cfg="companyName">Klaarex</span></strong><br><span data-cfg="address">10000 Prishtina, Kosovo</span></address>
           <a class="maps" data-cfg-href="mapsUrl" href="#" target="_blank" rel="noopener">In Google Maps öffnen →</a>
         </div>
         <div>
           <h3>Besuchen Sie uns</h3>
-          <p class="flights">Direktflüge nach Prishtina ab u. a. <b>Frankfurt, München, Düsseldorf, Stuttgart, Berlin</b> und <b>Zürich</b>, Flugzeit rund zwei bis drei Stunden. Wir holen Sie am Flughafen ab, Sie sehen das Büro und lernen Ihre Agenten persönlich kennen.</p>
+          <p class="flights">Direktflüge nach Prishtina ab u. a. <b>Frankfurt, München, Düsseldorf, Stuttgart, Berlin</b> und <b>Zürich</b>, Flugzeit rund zwei bis drei Stunden. Sie sind jederzeit willkommen: Sie sehen das Büro und lernen Ihr Team persönlich kennen.</p>
         </div>
       </div>
     </div>
-    <p class="market-note">Prishtina ist ein etablierter Nearshore-Standort für den deutschsprachigen Markt: Dienstleister mit mehreren tausend Mitarbeitenden bedienen von hier aus Kunden in Deutschland, Österreich und der Schweiz, und 2026 eröffnete auch die regiocom-Gruppe aus Magdeburg einen Standort in der Stadt. Wir sind die kleine, schnelle Alternative dazu: feste Agenten, Geschäftsführung am Telefon, Start in zwei Wochen.</p>
+    <p class="market-note">Prishtina ist ein etablierter Nearshore-Standort für den deutschsprachigen Markt: Dienstleister mit mehreren tausend Mitarbeitenden bedienen von hier aus Kunden in Deutschland, Österreich und der Schweiz, und 2026 eröffnete auch die regiocom-Gruppe aus Magdeburg einen Standort in der Stadt. Wir sind die kleine, schnelle Alternative dazu: feste Agenten, Geschäftsführung am Telefon, Start in vier Wochen.</p>
   </div>
 </section>
 
@@ -833,7 +837,7 @@ table { border-collapse: collapse; width: 100%; }
     <div class="sec-head">
       <p class="eyebrow">Datenschutz &amp; Sicherheit</p>
       <h2>Geregelt, bevor es losgeht.</h2>
-      <p class="lead">Unser Vertragspaket liegt vor dem ersten Gespräch bereit. Sie müssen nichts anfordern und nichts selbst aufsetzen.</p>
+      <p class="lead">Unser Vertragspaket erhalten Sie mit dem Angebot. Sie müssen nichts selbst aufsetzen.</p>
     </div>
     <div class="sec-cols">
       <div>
@@ -850,12 +854,12 @@ table { border-collapse: collapse; width: 100%; }
       <div>
         <h3>Technische und organisatorische Maßnahmen</h3>
         <ul class="check-list">
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>100 % Arbeit im Büro – kein Homeoffice, keine privaten Geräte, Clean-Desk-Regel, abschließbare Räume.</span></li>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Persönliche Zugänge mit Zwei-Faktor-Authentifizierung, Passwort-Manager, verschlüsselte Festplatten.</span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Arbeit ausschließlich im Büro – kein Homeoffice, keine privaten Geräte am Arbeitsplatz, Clean-Desk-Regel.</span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Persönliche Zugänge mit Zwei-Faktor-Authentifizierung und Passwort-Manager; Arbeitsgeräte werden von uns verwaltet und verschlüsselt.</span></li>
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Keine lokale Speicherung von Kundendaten; Arbeit ausschließlich in Ihren Systemen, keine USB-Medien, keine Screenshots.</span></li>
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Gesprächsaufzeichnung nur nach Ihrer Weisung, Aufbewahrung nach Ihrem Löschkonzept.</span></li>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Ausfallsicherheit: zwei unabhängige Internetanbieter und unterbrechungsfreie Stromversorgung.</span></li>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Meldung von Sicherheitsvorfällen an Sie innerhalb von 24 Stunden, jährliche Datenschutzschulung aller Mitarbeitenden.</span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Ausfallsicherheit: Vor dem Start Ihres Teams richten wir zwei unabhängige Internetanschlüsse und eine unterbrechungsfreie Stromversorgung ein.</span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span><span>Meldung von Sicherheitsvorfällen an Sie innerhalb von 24 Stunden; Datenschutzschulung jedes Agenten vor dem ersten Kundenkontakt, danach jährlich.</span></li>
         </ul>
       </div>
     </div>
@@ -881,7 +885,7 @@ table { border-collapse: collapse; width: 100%; }
       </details>
       <details>
         <summary>Wie gut ist das Deutsch wirklich?</summary>
-        <div class="a"><p>Unsere Agenten sind Muttersprachler oder auf C1-Niveau und haben in Deutschland, Österreich oder der Schweiz gelebt. Sie prüfen das selbst: Rufen Sie die Demo-Hotline an, hören Sie die Hörproben, und wählen Sie im Video-Interview selbst aus, wer Ihr Team übernimmt.</p></div>
+        <div class="a"><p>Wir stellen nur Agenten ein, die Muttersprachler oder auf C1-Niveau sind und in Deutschland, Österreich oder der Schweiz gelebt haben. Sie prüfen das selbst: Rufen Sie die Demo-Hotline an, hören Sie die Hörprobe jedes vorgeschlagenen Agenten, und wählen Sie im Video-Interview selbst aus, wer Ihr Team übernimmt.</p></div>
       </details>
       <details>
         <summary>Arbeiten die Agenten im Homeoffice?</summary>
@@ -889,15 +893,15 @@ table { border-collapse: collapse; width: 100%; }
       </details>
       <details>
         <summary>Was passiert, wenn ein Agent ausfällt oder kündigt?</summary>
-        <div class="a"><p>Für jedes Team ist von Anfang an eine Vertretung eingearbeitet, die Ihre Prozesse kennt. Urlaub planen wir mit Ihnen. Bei Krankheit übernimmt die Vertretung am selben Tag; Sie werden morgens informiert. Kündigt ein Agent, arbeiten wir während der Kündigungsfrist einen Nachfolger ein – auf unsere Kosten.</p></div>
+        <div class="a"><p>Urlaub planen wir im Voraus mit Ihnen. Wie die Vertretung bei Krankheit und längeren Ausfällen geregelt wird – etwa durch einen zweiten, eingearbeiteten Agenten –, legen wir im Vertrag fest, abhängig von Teamgröße und Servicezeiten. Kündigt ein Agent, arbeiten wir während der Kündigungsfrist einen Nachfolger ein – auf unsere Kosten.</p></div>
       </details>
       <details>
         <summary>Wie stabil sind Internet und Stromversorgung?</summary>
-        <div class="a"><p>Unser Büro hat zwei unabhängige Internetanschlüsse (Glasfaser und Mobilfunk) mit automatischer Umschaltung sowie eine unterbrechungsfreie Stromversorgung für Arbeitsplätze und Netzwerk. Ausfälle werden Ihnen innerhalb von 15 Minuten gemeldet und im Monatsbericht dokumentiert.</p></div>
+        <div class="a"><p>Vor dem Start Ihres Teams statten wir das Büro mit zwei unabhängigen Internetanschlüssen (Glasfaser und Mobilfunk) mit automatischer Umschaltung sowie einer unterbrechungsfreien Stromversorgung für Arbeitsplätze und Netzwerk aus. Ausfälle melden wir Ihnen innerhalb von 15 Minuten und dokumentieren sie im Monatsbericht.</p></div>
       </details>
       <details>
         <summary>Mit welchen Tools arbeiten Sie?</summary>
-        <div class="a"><p>Mit Ihren. Unsere Agenten arbeiten in Zendesk, Freshdesk, Gorgias, HubSpot, Salesforce, Shopify, Shopware, WooCommerce, Aircall, 3CX, Microsoft Teams und anderen Systemen. Sie vergeben Zugänge mit den Rechten, die Sie für richtig halten. Falls Sie noch keine Telefonanlage haben, stellen wir eine mit deutscher Rufnummer bereit.</p></div>
+        <div class="a"><p>Mit Ihren. Ob Zendesk, Freshdesk, Gorgias, HubSpot, Salesforce, Shopify, Shopware, WooCommerce, Aircall, 3CX oder Microsoft Teams: Ihre Agenten werden in den Systemen eingearbeitet, die Sie nutzen. Sie vergeben Zugänge mit den Rechten, die Sie für richtig halten. Falls Sie noch keine Telefonanlage haben, beraten wir Sie bei der Auswahl einer Cloud-Telefonanlage mit deutscher Rufnummer.</p></div>
       </details>
       <details>
         <summary>Machen Sie auch Outbound-Telefonie oder Kaltakquise?</summary>
@@ -905,11 +909,11 @@ table { border-collapse: collapse; width: 100%; }
       </details>
       <details>
         <summary>Wie schnell können wir starten, und wie weit können Sie skalieren?</summary>
-        <div class="a"><p>Nach dem ersten Gespräch erhalten Sie innerhalb von 24 Stunden ein Angebot. Der Start erfolgt innerhalb von 14 Tagen nach Unterzeichnung; die Einarbeitung dauert in der Regel fünf Arbeitstage. Aktuell sind <span data-cfg="capacityNow">3</span> Agenten sofort verfügbar; auf <span data-cfg="capacityScale">10</span> Agenten bauen wir innerhalb von <span data-cfg="scaleWeeks">8</span> Wochen aus, weil wir laufend deutschsprachige Kandidaten testen und auf der Ersatzbank halten.</p></div>
+        <div class="a"><p>Nach dem ersten Gespräch erhalten Sie innerhalb von 24 Stunden ein Angebot. Der Start erfolgt innerhalb von vier Wochen nach Unterzeichnung: Wir stellen das Team für Ihr Projekt zusammen, Sie wählen die Agenten im Video-Interview aus, dann folgen in der Regel fünf Arbeitstage Einarbeitung in Ihren Systemen. Größere Teams bauen wir schrittweise auf; den Zeitplan dafür vereinbaren wir im Angebot.</p></div>
       </details>
       <details>
         <summary>Was kostet ein Agent?</summary>
-        <div class="a"><p>Das hängt von Volumen, Kanälen, Servicezeiten und den Anforderungen an die Agenten ab – deshalb nennen wir keinen Listenpreis. Nach einem 30-minütigen Gespräch erhalten Sie innerhalb von 24 Stunden ein Angebot mit festem Preis, Leistungsbeschreibung und Service-Level. Es gibt keine versteckten Kosten: Einarbeitung, Vertretung und Reporting sind enthalten.</p></div>
+        <div class="a"><p>Das hängt von Volumen, Kanälen, Servicezeiten und den Anforderungen an die Agenten ab – deshalb nennen wir keinen Listenpreis. Nach einem 30-minütigen Gespräch erhalten Sie innerhalb von 24 Stunden ein Angebot mit festem Preis, Leistungsbeschreibung und Service-Level. Es gibt keine versteckten Kosten: Einarbeitung und Reporting sind enthalten, die Vertretungsregelung steht im Angebot.</p></div>
       </details>
       <details>
         <summary>Wie wird abgerechnet?</summary>
@@ -951,8 +955,8 @@ table { border-collapse: collapse; width: 100%; }
     <div class="cta-panel">
       <span class="k">Demo-Hotline</span>
       <h3>Erst hören, dann entscheiden.</h3>
-      <p>Drei Minuten mit einem Agenten, auf Deutsch, ohne Termin. <span data-cfg="demoHours">Mo–Fr 09:00–17:00 Uhr</span>.</p>
-      <a class="btn btn-secondary" href="#" data-cfg-tel="phoneDE" data-cfg="phoneDE">+49 [Nummer]</a>
+      <p>Drei Minuten auf Deutsch, ohne Termin. <span data-cfg="demoHours">Mo–Fr 09:00–17:00 Uhr</span>.</p>
+      <a class="btn btn-secondary" href="#" data-cfg-tel="phone" data-cfg="phone">+383 43 819 881</a>
     </div>
   </div>
 </section>
@@ -1033,14 +1037,9 @@ table { border-collapse: collapse; width: 100%; }
         <h3>Direkt erreichen</h3>
         <div>
           <div class="contact-line">
-            <span class="lbl">Telefon Deutschland</span>
-            <span class="val"><a href="#" data-cfg-tel="phoneDE" data-cfg="phoneDE">+49 [Nummer]</a></span>
-            <button class="copy" type="button" data-copy="phoneDE">Kopieren</button>
-          </div>
-          <div class="contact-line">
-            <span class="lbl">Telefon Kosovo</span>
-            <span class="val"><a href="#" data-cfg-tel="phoneXK" data-cfg="phoneXK">+383 [Nummer]</a></span>
-            <button class="copy" type="button" data-copy="phoneXK">Kopieren</button>
+            <span class="lbl">Telefon</span>
+            <span class="val"><a href="#" data-cfg-tel="phone" data-cfg="phone">+383 43 819 881</a></span>
+            <button class="copy" type="button" data-copy="phone">Kopieren</button>
           </div>
           <div class="contact-line">
             <span class="lbl">E-Mail</span>
@@ -1049,7 +1048,7 @@ table { border-collapse: collapse; width: 100%; }
           </div>
           <div class="contact-line">
             <span class="lbl">WhatsApp Business</span>
-            <span class="val" data-cfg="whatsapp">+49 [Nummer]</span>
+            <span class="val" data-cfg="whatsapp">+383 43 819 881</span>
             <button class="copy" type="button" data-copy="whatsapp">Kopieren</button>
           </div>
           <div class="contact-line">
@@ -1058,7 +1057,7 @@ table { border-collapse: collapse; width: 100%; }
             <span></span>
           </div>
         </div>
-        <p class="resp"><span data-cfg="companyName">Klaarex</span> · <span data-cfg="address">[Straße Nr.], 10000 Prishtina, Kosovo</span><br>Geschäftsführung: <span data-cfg="founder1Name">[Vorname Nachname]</span>, <span data-cfg="founder2Name">[Vorname Nachname]</span><br>Erreichbar Mo–Fr 08:00–18:00 Uhr (MEZ/MESZ).</p>
+        <p class="resp"><span data-cfg="companyName">Klaarex</span> · <span data-cfg="address">10000 Prishtina, Kosovo</span><span data-cfg-if="founder1Name" hidden><br>Geschäftsführung: <span data-cfg="founder1Name"></span>, <span data-cfg="founder2Name"></span></span><br>Erreichbar Mo–Fr 08:00–18:00 Uhr (MEZ/MESZ).</p>
       </div>
     </div>
   </div>
@@ -1074,19 +1073,20 @@ table { border-collapse: collapse; width: 100%; }
     <h2>Anbieter</h2>
     <address>
       <strong><span data-cfg="companyName">Klaarex</span> <span data-cfg="legalForm">SH.P.K.</span></strong><br>
-      <span data-cfg="address">[Straße Nr.], 10000 Prishtina, Kosovo</span>
+      <span data-cfg="address">10000 Prishtina, Kosovo</span>
     </address>
-    <h2>Vertreten durch</h2>
-    <p><span data-cfg="founder1Name">[Vorname Nachname]</span> (Geschäftsführer), <span data-cfg="founder2Name">[Vorname Nachname]</span> (Geschäftsführer)</p>
+    <div data-cfg-if="founder1Name" hidden>
+      <h2>Vertreten durch</h2>
+      <p><span data-cfg="founder1Name"></span> (Geschäftsführer)<span data-cfg-if="founder2Name" hidden>, <span data-cfg="founder2Name"></span> (Geschäftsführer)</span></p>
+    </div>
     <h2>Kontakt</h2>
-    <p>Telefon: <span data-cfg="phoneDE">+49 [Nummer]</span><br>E-Mail: <span data-cfg="email">kontakt@klaarex.com</span></p>
+    <p>Telefon: <span data-cfg="phone">+383 43 819 881</span><br>E-Mail: <span data-cfg="email">kontakt@klaarex.com</span></p>
     <h2>Registereintrag</h2>
-    <p>Eingetragen im Handelsregister der Republik Kosovo (Agjencia për Regjistrimin e Bizneseve – ARBK)<br>Registernummer: <span data-cfg="regNo">[ARBK-Nummer]</span><br>Steuernummer: <span data-cfg="taxNo">[Fiskalnummer]</span></p>
+    <p>Eingetragen im Handelsregister der Republik Kosovo (Agjencia për Regjistrimin e Bizneseve – ARBK)<span data-cfg-if="regNo" hidden><br>Registernummer: <span data-cfg="regNo"></span></span><span data-cfg-if="taxNo" hidden><br>Steuernummer: <span data-cfg="taxNo"></span></span></p>
     <h2>Verantwortlich für den Inhalt</h2>
-    <p><span data-cfg="founder1Name">[Vorname Nachname]</span>, Anschrift wie oben</p>
+    <p><span data-cfg="founder1Name">Die Geschäftsführung</span>, Anschrift wie oben</p>
     <h2>Verbraucherstreitbeilegung</h2>
     <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Unser Angebot richtet sich ausschließlich an Unternehmen.</p>
-    <div class="todo"><strong>Vor Veröffentlichung:</strong> Platzhalter ausfüllen (Firmenname, Anschrift, Geschäftsführer, Registernummer, Steuernummer, Telefon, E-Mail) und diesen Hinweis löschen.</div>
   </div>
 </section>
 
@@ -1095,19 +1095,19 @@ table { border-collapse: collapse; width: 100%; }
   <div class="wrap">
     <a class="back" href="#top">← Zurück zur Startseite</a>
     <h1>Datenschutzerklärung</h1>
-    <p class="muted">Stand: <span data-cfg="privacyDate">[Datum]</span></p>
+    <p class="muted">Stand: <span data-cfg="privacyDate">20. Oktober 2026</span></p>
 
     <h2>1. Verantwortlicher</h2>
-    <p><span data-cfg="companyName">Klaarex</span> <span data-cfg="legalForm">SH.P.K.</span>, <span data-cfg="address">[Straße Nr.], 10000 Prishtina, Kosovo</span><br>E-Mail: <span data-cfg="email">kontakt@klaarex.com</span> · Telefon: <span data-cfg="phoneDE">+49 [Nummer]</span></p>
+    <p><span data-cfg="companyName">Klaarex</span> <span data-cfg="legalForm">SH.P.K.</span>, <span data-cfg="address">10000 Prishtina, Kosovo</span><br>E-Mail: <span data-cfg="email">kontakt@klaarex.com</span> · Telefon: <span data-cfg="phone">+383 43 819 881</span></p>
 
     <h2>2. Allgemeines</h2>
     <p>Diese Website richtet sich an Unternehmen. Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung der Website und zur Bearbeitung Ihrer Anfragen erforderlich ist. Diese Website setzt keine Cookies, keine Analyse- oder Tracking-Dienste und keine extern geladenen Schriftarten ein.</p>
 
     <h2>3. Hosting und Server-Logfiles</h2>
-    <p>Die Website wird bei <span data-cfg="hostingProvider">[Hosting-Anbieter, Sitz]</span> gehostet. Beim Aufruf werden technisch notwendige Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp) in Server-Logfiles verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Logfiles werden nach <span data-cfg="logRetention">[Frist]</span> gelöscht. Mit dem Hosting-Anbieter besteht ein Auftragsverarbeitungsvertrag.</p>
+    <p>Die Website wird bei <span data-cfg="hostingProvider">Vercel Inc., USA</span> gehostet. Beim Aufruf werden technisch notwendige Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp) in Server-Logfiles verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Logfiles werden nach <span data-cfg="logRetention">spätestens wenigen Tagen</span> gelöscht. Mit dem Hosting-Anbieter besteht ein Auftragsverarbeitungsvertrag.</p>
 
     <h2>4. Kontaktformular, E-Mail-Kontakt und Bewerbungen</h2>
-    <p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen gemachten Angaben (Name, Unternehmen, E-Mail-Adresse, optional Telefonnummer, Inhalt der Nachricht) zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. lit. f DSGVO. Die Übermittlung des Kontaktformulars erfolgt über <span data-cfg="formProvider">[Formular-Dienstleister, Sitz]</span>; mit diesem Anbieter besteht ein Auftragsverarbeitungsvertrag. Bewerbungsunterlagen verarbeiten wir ausschließlich zur Durchführung des Bewerbungsverfahrens und löschen sie spätestens sechs Monate nach Abschluss des Verfahrens, sofern Sie keiner längeren Speicherung zustimmen. Anfragedaten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+    <p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen gemachten Angaben (Name, Unternehmen, E-Mail-Adresse, optional Telefonnummer, Inhalt der Nachricht) zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. lit. f DSGVO. <span id="formProviderNote" hidden>Die Übermittlung des Kontaktformulars erfolgt über <span data-cfg="formProvider">[Formular-Dienstleister, Sitz]</span>; mit diesem Anbieter besteht ein Auftragsverarbeitungsvertrag. </span>Bewerbungsunterlagen verarbeiten wir ausschließlich zur Durchführung des Bewerbungsverfahrens und löschen sie spätestens sechs Monate nach Abschluss des Verfahrens, sofern Sie keiner längeren Speicherung zustimmen. Anfragedaten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
 
     <h2>5. Datenübermittlung in ein Drittland</h2>
     <p>Wir haben unseren Sitz in der Republik Kosovo. Für das Kosovo liegt kein Angemessenheitsbeschluss der Europäischen Kommission vor. Die Verarbeitung Ihrer Anfragedaten in unserem Unternehmen erfolgt auf Grundlage der EU-Standardvertragsklauseln (Durchführungsbeschluss (EU) 2021/914) sowie der in unserem Transfer Impact Assessment beschriebenen zusätzlichen Maßnahmen. Das kosovarische Datenschutzgesetz Nr. 06/L-082 ist an der DSGVO ausgerichtet.</p>
@@ -1125,8 +1125,6 @@ table { border-collapse: collapse; width: 100%; }
 
     <h2>7. Änderungen</h2>
     <p>Wir passen diese Datenschutzerklärung an, wenn sich die Rechtslage oder unsere Verarbeitungen ändern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
-
-    <div class="todo"><strong>Vor Veröffentlichung:</strong> Hosting-Anbieter, Formular-Dienstleister, Löschfristen und Datum eintragen; den Text von einem Anwalt oder mit einem Generator (z. B. e-recht24.de, datenschutz-generator.de) prüfen lassen; diesen Hinweis löschen.</div>
   </div>
 </section>
 
@@ -1159,18 +1157,17 @@ table { border-collapse: collapse; width: 100%; }
         <h4>Kontakt</h4>
         <ul>
           <li><a href="#" data-cfg-mail="email" data-cfg="email">kontakt@klaarex.com</a></li>
-          <li><a href="#" data-cfg-tel="phoneDE" data-cfg="phoneDE">+49 [Nummer]</a></li>
-          <li><a href="#" data-cfg-tel="phoneXK" data-cfg="phoneXK">+383 [Nummer]</a></li>
+          <li><a href="#" data-cfg-tel="phone" data-cfg="phone">+383 43 819 881</a></li>
           <li><a data-cfg-href="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
       </div>
       <div>
         <h4>Standort</h4>
-        <p><span data-cfg="address">[Straße Nr.], 10000 Prishtina, Kosovo</span><br>Mo–Fr 08:00–18:00 Uhr (MEZ/MESZ)</p>
+        <p><span data-cfg="address">10000 Prishtina, Kosovo</span><br>Mo–Fr 08:00–18:00 Uhr (MEZ/MESZ)</p>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year">2026</span> <span data-cfg="companyName">Klaarex</span> <span data-cfg="legalForm">SH.P.K.</span> · Reg.-Nr. <span data-cfg="regNo">[ARBK-Nummer]</span> · Geschäftsführung: <span data-cfg="founder1Name">[Vorname Nachname]</span>, <span data-cfg="founder2Name">[Vorname Nachname]</span></span>
+      <span>© <span id="year">2026</span> <span data-cfg="companyName">Klaarex</span> <span data-cfg="legalForm">SH.P.K.</span><span data-cfg-if="regNo" hidden> · Reg.-Nr. <span data-cfg="regNo"></span></span><span data-cfg-if="founder1Name" hidden> · Geschäftsführung: <span data-cfg="founder1Name"></span>, <span data-cfg="founder2Name"></span></span></span>
       <span><a href="#impressum">Impressum</a> &nbsp;·&nbsp; <a href="#datenschutz">Datenschutz</a></span>
     </div>
   </div>
@@ -1180,49 +1177,36 @@ table { border-collapse: collapse; width: 100%; }
 <script>
 /* =====================================================================
    CONFIG — the ONLY place you need to edit. Everything in [brackets]
-   is a placeholder. The capacity numbers feed the hero card and the FAQ.
+   is a placeholder.
    ===================================================================== */
 const CONFIG = {
   companyName: "Klaarex",
   legalForm: "SH.P.K.",
-  address: "[Straße Nr.], 10000 Prishtina, Kosovo",
+  address: "10000 Prishtina, Kosovo",   // add street and number once it may be published
   mapsUrl: "",                       // e.g. "https://maps.google.com/?q=..." — empty hides the link
-  phoneDE: "+49 [Nummer]",           // German number from your cloud phone system (demo hotline)
-  phoneXK: "+383 [Nummer]",
-  whatsapp: "+49 [Nummer]",
+  phone: "+383 43 819 881",          // demo hotline and contact number
+  whatsapp: "+383 43 819 881",
   email: "kontakt@klaarex.com",
   jobsEmail: "jobs@klaarex.com",
   calendly: "",                      // e.g. "https://calendly.com/ihr-name/30min" — empty hides the link
   linkedin: "",                      // e.g. "https://www.linkedin.com/company/ihr-unternehmen" — empty hides the link
-  regNo: "[ARBK-Nummer]",
-  taxNo: "[Fiskalnummer]",
-  privacyDate: "[Datum]",
-  hostingProvider: "[Hosting-Anbieter, Sitz]",      // e.g. "Vercel Inc., USA" or "Hetzner Online GmbH, Deutschland"
+  regNo: "",                         // empty hides the register number everywhere
+  taxNo: "",                         // empty hides the tax number
+  privacyDate: "20. Oktober 2026",
+  hostingProvider: "Vercel Inc., USA",
   formProvider: "[Formular-Dienstleister, Sitz]",   // e.g. "Formspree Inc., USA"
-  logRetention: "[Frist]",                          // e.g. "7 Tagen"
+  logRetention: "spätestens wenigen Tagen",         // make exact once the Vercel plan (Hobby/Pro) is known
   demoHours: "Mo–Fr 09:00–17:00 Uhr",
-
-  // Capacity statement (hero spec card + FAQ)
-  capacityNow: 3,
-  capacityScale: 10,
-  scaleWeeks: 8,
 
   // Contact form endpoint. Create a free form at formspree.io and paste the URL,
   // e.g. "https://formspree.io/f/abcdwxyz". Empty = form shows the e-mail address instead.
   formEndpoint: "",
 
   // Founders — order: 1 = sales/contract, 2 = operations/quality
+  // name: "" keeps the name off the page: cards show the role, Impressum/footer rows stay hidden.
   founders: [
-    { name: "[Vorname Nachname]", initials: "AB", role: "Geschäftsführer · Vertrieb & Verträge", text: "Ihr Ansprechpartner für Angebot, Vertrag, Datenschutzpaket und Abrechnung. Erreichbar per Telefon, E-Mail und LinkedIn." },
-    { name: "[Vorname Nachname]", initials: "CD", role: "Geschäftsführer · Operations & Qualität", text: "Verantwortlich für Einarbeitung, Qualitätssicherung und den wöchentlichen Bericht. Hört jede Woche in Gespräche jedes Agenten hinein." }
-  ],
-
-  // Agents — keep profiles anonymised (first name or "Agent 1"), get written consent before publishing.
-  // audio: URL of a 60–90 second demo recording (mp3), or "" to show "Hörprobe auf Anfrage".
-  agents: [
-    { name: "Agent 1", initials: "A1", level: "Deutsch C1 · Englisch B2", years: "[x] Jahre in Deutschland", background: "[z. B. Einzelhandel, 3 Jahre Kundenservice]", tools: "Zendesk, Shopify", audio: "" },
-    { name: "Agent 2", initials: "A2", level: "Deutsch muttersprachlich", years: "[x] Jahre in [Deutschland / Schweiz]", background: "[z. B. Logistik, Disposition]", tools: "Freshdesk, Shopware", audio: "" },
-    { name: "Agent 3", initials: "A3", level: "Deutsch C1 · Englisch C1", years: "[x] Jahre in [Österreich]", background: "[z. B. Hotellerie, Rezeption]", tools: "Gorgias, HubSpot", audio: "" }
+    { name: "", initials: "GF", role: "Geschäftsführer · Vertrieb & Verträge", text: "Ihr Ansprechpartner für Angebot, Vertrag, Datenschutzpaket und Abrechnung. Erreichbar per Telefon, E-Mail und LinkedIn." },
+    { name: "", initials: "GF", role: "Geschäftsführer · Operations & Qualität", text: "Verantwortlich für Einarbeitung, Qualitätssicherung und den wöchentlichen Bericht. Hört jede Woche in Gespräche jedes Agenten hinein." }
   ]
 };
 /* ===================================================================== */
@@ -1230,9 +1214,6 @@ const CONFIG = {
 (function () {
   const text = {
     ...CONFIG,
-    capacityNow: String(CONFIG.capacityNow),
-    capacityScale: String(CONFIG.capacityScale),
-    scaleWeeks: String(CONFIG.scaleWeeks),
     founder1Name: CONFIG.founders[0].name,
     founder2Name: CONFIG.founders[1].name
   };
@@ -1242,30 +1223,25 @@ const CONFIG = {
     const v = text[el.dataset.cfg];
     if (typeof v === "string" && v !== "") el.textContent = v;
   });
+  document.querySelectorAll("[data-cfg-if]").forEach(el => { el.hidden = !text[el.dataset.cfgIf]; });
   // Links: tel / mailto / external
   const telHref = s => "tel:" + s.replace(/[^\d+]/g, "");
-  document.querySelectorAll("[data-cfg-tel]").forEach(a => { a.href = telHref(CONFIG[a.dataset.cfgTel] || ""); });
+  document.querySelectorAll("[data-cfg-tel]").forEach(a => {
+    const v = CONFIG[a.dataset.cfgTel] || "";
+    if (v && !v.includes("[")) a.href = telHref(v); else a.removeAttribute("href"); // placeholder number: no dead tel: link
+  });
   document.querySelectorAll("[data-cfg-mail]").forEach(a => { a.href = "mailto:" + (CONFIG[a.dataset.cfgMail] || ""); });
   document.querySelectorAll("[data-cfg-href]").forEach(a => {
     const v = CONFIG[a.dataset.cfgHref];
     if (v) a.href = v; else (a.closest(".contact-line") || a).hidden = true;
   });
   document.getElementById("year").textContent = new Date().getFullYear();
+  const fpn = document.getElementById("formProviderNote"); if (fpn) fpn.hidden = !CONFIG.formEndpoint;
 
   // Team cards
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  document.getElementById("agents").innerHTML = CONFIG.agents.map(a => `
-    <article class="agent">
-      <div class="agent-top"><span class="avatar" aria-hidden="true">${esc(a.initials)}</span><div><h3>${esc(a.name)}</h3><span class="lvl">${esc(a.level)}</span></div></div>
-      <dl>
-        <dt>Erfahrung</dt><dd>${esc(a.years)}</dd>
-        <dt>Zuvor</dt><dd>${esc(a.background)}</dd>
-        <dt>Tools</dt><dd>${esc(a.tools)}</dd>
-      </dl>
-      ${a.audio ? `<audio controls preload="none" src="${esc(a.audio)}"></audio><span class="audio-note">Hörprobe, 90 Sekunden</span>` : `<span class="audio-note">Hörprobe und Lebenslauf auf Anfrage.</span>`}
-    </article>`).join("");
   document.getElementById("founders").innerHTML = CONFIG.founders.map(f => `
-    <div class="founder"><span class="avatar" aria-hidden="true">${esc(f.initials)}</span><div><h3>${esc(f.name)}</h3><div class="role">${esc(f.role)}</div><p>${esc(f.text)}</p></div></div>`).join("");
+    <div class="founder"><span class="avatar" aria-hidden="true">${esc(f.initials)}</span><div>${f.name ? `<h3>${esc(f.name)}</h3><div class="role">${esc(f.role)}</div>` : `<h3>${esc(f.role)}</h3>`}<p>${esc(f.text)}</p></div></div>`).join("");
 
   // Live clocks (Berlin and Prishtina share CET/CEST)
   const clocks = document.querySelectorAll("[data-clock]");
@@ -1369,7 +1345,7 @@ const CONFIG = {
       return;
     }
     if (!CONFIG.formEndpoint) {
-      show(`Das Formular ist noch nicht angebunden. Schreiben Sie uns direkt an <strong>${esc(CONFIG.email)}</strong> oder rufen Sie an: <strong>${esc(CONFIG.phoneDE)}</strong>.`);
+      show(`Das Formular ist noch nicht angebunden. Schreiben Sie uns direkt an <strong>${esc(CONFIG.email)}</strong> oder rufen Sie an: <strong>${esc(CONFIG.phone)}</strong>.`);
       return;
     }
     submitBtn.disabled = true; submitBtn.textContent = "Wird gesendet …";
@@ -1389,7 +1365,7 @@ const CONFIG = {
   });
 
   // Structured data for search engines (filled from CONFIG)
-  const ld = { "@context": "https://schema.org", "@type": "ProfessionalService", name: CONFIG.companyName, description: "Deutschsprachiger Kundenservice (Nearshore) aus Prishtina, Kosovo", telephone: CONFIG.phoneDE, email: CONFIG.email, address: { "@type": "PostalAddress", streetAddress: CONFIG.address, addressLocality: "Prishtina", addressCountry: "XK" }, areaServed: ["DE", "AT", "CH"], availableLanguage: ["de", "en", "sq"] };
+  const ld = { "@context": "https://schema.org", "@type": "ProfessionalService", name: CONFIG.companyName, description: "Deutschsprachiger Kundenservice (Nearshore) aus Prishtina, Kosovo", telephone: CONFIG.phone, email: CONFIG.email, address: { "@type": "PostalAddress", streetAddress: CONFIG.address, addressLocality: "Prishtina", addressCountry: "XK" }, areaServed: ["DE", "AT", "CH"], availableLanguage: ["de", "en", "sq"] };
   const s = document.createElement("script"); s.type = "application/ld+json"; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
 })();
 </script>
