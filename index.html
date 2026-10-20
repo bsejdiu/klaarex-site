@@ -334,24 +334,6 @@ table { border-collapse: collapse; width: 100%; }
 @media (max-width: 800px) { .sec-cols { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .doc-list { grid-template-columns: 1fr; } }
 
-/* Pricing */
-.tiers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
-.tier { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; display: grid; gap: 16px; align-content: start; min-width: 0; }
-.tier.featured { border-color: transparent; background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--spectrum) border-box; box-shadow: var(--shadow); }
-.tier .badge { position: absolute; top: -13px; left: 26px; background: #fff; color: #06070A; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; font-weight: 700; }
-.tier h3 { font-size: 20px; font-weight: 500; }
-.tier .price { font-size: 30px; font-weight: 300; letter-spacing: -0.03em; line-height: 1.1; color: #fff; }
-.tier .price small { display: block; margin-top: 6px; font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
-.tier .sub { font-size: 14px; color: var(--muted); margin-top: -6px; }
-.tier ul { display: grid; gap: 10px; font-size: 14.5px; color: var(--ink-2); }
-.tier li { display: flex; gap: 10px; }
-.tier li::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--g1); margin-top: 9px; }
-.pilot { margin-top: 20px; border: 1px dashed var(--line-2); border-radius: 18px; padding: 26px 28px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; background: var(--glass); }
-.pilot h3 { font-size: 22px; font-weight: 400; }
-.pilot p { color: var(--muted); font-size: 15px; max-width: 64ch; margin-top: 6px; }
-.price-note { margin-top: 18px; font-size: 13.5px; color: var(--dim); }
-@media (max-width: 900px) { .tiers { grid-template-columns: 1fr; } .tier.featured { order: -1; } }
-
 /* FAQ — outlined accordion cards */
 .faq { max-width: 860px; display: grid; gap: 12px; }
 .faq details { border: 1px solid var(--line-2); border-radius: 14px; background: var(--glass); padding: 0 22px; transition: border-color .2s; }
@@ -472,7 +454,6 @@ table { border-collapse: collapse; width: 100%; }
       <a href="#ablauf">Ablauf</a>
       <a href="#team">Team</a>
       <a href="#sicherheit">Sicherheit</a>
-      <a href="#preise">Preise</a>
       <a href="#kontakt">Kontakt</a>
       <a class="phone" href="#" data-cfg-tel="phoneDE" data-cfg="phoneDE">+49 [Nummer]</a>
       <a class="btn btn-primary btn-sm" href="#kontakt">Angebot anfragen</a>
@@ -882,55 +863,6 @@ table { border-collapse: collapse; width: 100%; }
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="block tint" id="preise">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Preismodelle</p>
-      <h2>Drei Modelle, ein Preis nach Vereinbarung.</h2>
-      <p class="lead">Den Preis legen wir gemeinsam mit Ihnen fest – nach Volumen, Kanälen, Servicezeiten und den Anforderungen an die Agenten. Sie erhalten ihn im Angebot innerhalb von 24 Stunden nach dem Erstgespräch.</p>
-    </div>
-    <div class="tiers" id="tiers">
-      <article class="tier featured">
-        <span class="badge">Empfohlen</span>
-        <h3>Dedizierter Agent</h3>
-        <div class="price">Monatspauschale <small>pro Agent</small></div>
-        <p class="sub">Vollzeit für Ihr Unternehmen, Mo–Fr 08–18 Uhr</p>
-        <ul>
-          <li>Fester Agent, eingearbeitet auf Ihre Produkte und Ihren Tonfall</li>
-          <li>Eingearbeitete Vertretung für Urlaub und Krankheit inklusive</li>
-          <li>Telefon, E-Mail, Chat – in Ihren Systemen</li>
-          <li>Service-Level im Vertrag, wöchentlicher KPI- und Qualitätsbericht</li>
-          <li>Fester Ansprechpartner in der Geschäftsleitung</li>
-        </ul>
-      </article>
-      <article class="tier">
-        <h3>Flexibel nach Stunden</h3>
-        <div class="price">Stundensatz <small>nach Vereinbarung</small></div>
-        <p class="sub">Für Overflow, Spitzen und Vertretungen</p>
-        <ul>
-          <li>Overflow, Auftragsspitzen, Urlaubsvertretung</li>
-          <li>Abrechnung auf 15 Minuten genau, Stundenprotokoll inklusive</li>
-          <li>Geteilte Agenten aus einem festen, eingearbeiteten Team</li>
-          <li>Wechsel zum dedizierten Agenten jederzeit möglich</li>
-        </ul>
-      </article>
-      <article class="tier">
-        <h3>Abend und Wochenende</h3>
-        <div class="price">Erweiterte Zeiten <small>nach Vereinbarung</small></div>
-        <p class="sub">Mo–Fr 18–22 Uhr, Sa 09–18 Uhr</p>
-        <ul>
-          <li>Erweiterte Servicezeiten für Shops mit Abendgeschäft</li>
-          <li>Kombinierbar mit beiden Modellen</li>
-          <li>Feiertage nach deutschem Kalender</li>
-          <li>Sonntage und Nachtschichten auf Anfrage</li>
-        </ul>
-      </article>
-    </div>
-    <p class="price-note">Abrechnung monatlich in Euro per SEPA-Überweisung, mit Stundenprotokoll pro Agent. Laufzeit und Zahlungsbedingungen regeln wir im Vertrag. Angebote für Teams ab 5 Agenten und für Partner-Call-Center auf Anfrage.</p>
-  </div>
-</section>
-
 <!-- FAQ -->
 <section class="block" id="faq">
   <div class="wrap">
@@ -1219,7 +1151,6 @@ table { border-collapse: collapse; width: 100%; }
           <li><a href="#branchen">Branchen</a></li>
           <li><a href="#service-level">Service-Level</a></li>
           <li><a href="#sicherheit">Datenschutz &amp; Sicherheit</a></li>
-          <li><a href="#preise">Preise</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#karriere">Karriere</a></li>
         </ul>
